@@ -47,6 +47,9 @@ function App() {
     console.log("hola");
   }
 
+  const words = ["PINYA", "AMB", "PIZZA", "TREGUA", "TACTICA"];
+  const randomWord = Math.floor(Math.random() * words.length);
+
   return (
     <section>
       {letterArray.map((letterObject) => (
