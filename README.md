@@ -34,6 +34,7 @@ LetterToGuess:
 
 Opcionals:
 
+- posar classes BEM
 - probar a agafar paraules del diccionari
 - cambiar ninot
 - fer llegenda o quadre de missatges de com vas (o estadistiques)
