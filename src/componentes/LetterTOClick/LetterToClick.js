@@ -18,7 +18,7 @@ function LetterToClick({ letter, isInWord, actionOnClick }) {
 
 LetterToClick.propTypes = {
   letter: PropTypes.string.isRequired,
-  functionOnClick: PropTypes.func.isRequired,
+  actionOnClick: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
 
