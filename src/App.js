@@ -37,9 +37,24 @@ function App() {
   ];
 
   const letterArray = [];
-  const words = ["PINYA", "AMB", "PIZZA", "TREGUA", "TACTICA"];
-  // const word = parseInt(Math.floor(Math.random() * words.length));
-  const word = words[0];
+  const words = [
+    "PINYA",
+    "AMB",
+    "PIZZA",
+    "ES",
+    "LA",
+    "MILLOR",
+    "DE",
+    "TOTES",
+    "NAPO",
+    "FA",
+    "PINYA",
+    "AMB",
+    "MI",
+  ];
+  const word = words[parseInt(Math.random() * words.length)];
+
+  //const word = words[1];
   const emptyArray = new Array(word.length).fill("_");
   for (let i = 0; i < letters.length; i++) {
     letterArray.push({
