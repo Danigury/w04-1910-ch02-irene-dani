@@ -31,20 +31,33 @@ function App() {
     "Y",
     "Z",
   ];
-  const letterObjects = [];
+  const letterArray = [];
   const word = "CASA";
 
-  for (i of letters) {
-    letterObjects.push({
+  for (let i of letters) {
+    letterArray.push({
       id: 1,
       letter: i,
-      hasBeenClicked: false,
       isInWord: word.includes(i) ? true : false,
     });
   }
 
-  console.log(letterObjects);
-  return;
+  /*  event.target.contains.className("");  */
+  function change() {
+    console.log("hola");
+  }
+
+  return (
+    <section>
+      {letterArray.map((letterObject) => (
+        <LetterToClick
+          letter={letterObject.letter}
+          isInWord={letterObject.isInWord}
+          actionOnClick={change}
+        />
+      ))}
+    </section>
+  );
 }
 
 export default App;

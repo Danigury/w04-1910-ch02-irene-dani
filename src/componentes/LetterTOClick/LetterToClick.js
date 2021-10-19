@@ -1,8 +1,16 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
-function LetterToClick({ letter, functionOnClick, className }) {
+function LetterToClick({ letter, isInWord, actionOnClick }) {
+  const [className, setClassName] = useState("unclicked");
   return (
-    <div className={"letter-to-click " + className} onClick={functionOnClick}>
+    <div
+      className={"letter-to-click " + className}
+      onClick={() => {
+        setClassName(isInWord ? "green" : "red");
+        actionOnClick();
+      }}
+    >
       {letter}
     </div>
   );
