@@ -91,7 +91,7 @@ function Hangman({ failures }) {
         x2="32"
         y2="80"
       ></line>,
-    ];
+    ], [failures];
 
     return hangmanPieces.slice(0, failures);
   });
