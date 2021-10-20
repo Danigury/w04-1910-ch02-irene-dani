@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Hangman from "./componentes/Hangman/Hangman";
 import LetterToGuess from "./componentes/letter-to-guess/LetterToGuess";
-import LetterToClick from "./componentes/LetterToClick/LetterToClick";
+import LetterToClick from "./componentes/LetterTOClick/LetterToClick";
 import Message from "./componentes/Message/Message";
 
 function App() {
