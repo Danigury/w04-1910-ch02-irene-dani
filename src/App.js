@@ -65,7 +65,7 @@ function App() {
     });
   }
   const [successes, setSuccesses] = useState(0);
-  const [failures, setFailures] = useState(0);
+  let [failures, setFailures] = useState(0);
   const [wordUpdate, setWordUpdate] = useState(emptyArray);
   const [text, setText] = useState("");
   let newWord;
