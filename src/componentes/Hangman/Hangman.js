@@ -94,7 +94,7 @@ function Hangman({ failures }) {
     ];
 
     return hangmanPieces.slice(0, failures);
-  });
+  }, []);
 
   return (
     <svg className="hangman" viewBox="0 0 96 96" width="300" height="300">
